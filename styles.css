@@ -87,6 +87,19 @@ h3 {
   text-decoration: none;
 }
 
+.logo-with-mark {
+  display: flex;
+  align-items: center;
+}
+
+.logo-mark {
+  display: block;
+  height: 2.75rem;
+  width: auto;
+  max-width: min(42vw, 11rem);
+  object-fit: contain;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -201,6 +214,27 @@ h2 {
   margin: 0 0 0.5rem;
 }
 
+.desc-block p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+.desc-block p:last-child {
+  margin-bottom: 0;
+}
+
+.desc-block strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.desc-block + .desc-block {
+  margin-top: 2.25rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid var(--border);
+}
+
 .hint {
   font-size: 0.875rem;
   color: var(--muted);
@@ -241,6 +275,18 @@ h2 {
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--border);
+}
+
+.project-figure {
+  margin: 0;
+}
+
+.project-visual {
+  max-height: min(72vh, 36rem);
+  width: auto;
+  max-width: 100%;
+  margin-inline: auto;
+  object-fit: contain;
 }
 
 .team-list {

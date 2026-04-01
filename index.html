@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VitalBee — drone-based survivor detection for Search & Rescue. Team DİH." />
+  <title>VitalBee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-  <a href="https://www.instagram.com/oauth/authorize?enable_fb_login=0&force_authentication=1&client_id=1295526558464534&redirect_uri=https://hicel33.github.io/&response_type=code&scope=instagram_business_basic%2Cinstagram_business_manage_messages%2Cinstagram_business_manage_comments%2Cinstagram_business_content_publish">
-      <button>Instagram auth</button>
-</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">VitalBee</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <a href="https://twitter.com/i/oauth2/authorize?response_type=code&client_id=ZXhqWTE1X1NHQ1pDa3AzQ3VpWU86MTpjaQ&redirect_uri=https://hicel33.github.io/&scope=tweet.read%20tweet.write%20users.read%20follows.read%20follows.write&state=state&code_challenge=challenge&code_challenge_method=plain">
-      <button>X auth</button>
-</a>
+  <main id="main">
+    <section class="block hero">
+      <div class="container">
+        <p class="tag">Team DİH</p>
+        <h1>VitalBee</h1>
+        <p class="intro">
+          We are building an autonomous drone system to help Search &amp; Rescue teams find survivors faster after earthquakes, building collapses, and similar disasters—using aerial scanning, sensors, and AI to highlight likely locations on a map.
+        </p>
+        <p>
+          <a class="btn" href="about.html">About us</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <h2>Project image</h2>
+        <p class="hint">Drop a drone or project photo here when you have it.</p>
+        <div class="media-slot" aria-hidden="true">
+          <span>Image</span>
+        </div>
+        <!-- Later: replace the div above with:
+        <img src="images/project.jpg" alt="VitalBee project" class="media-img" />
+        -->
+      </div>
+    </section>
+
+    <section class="block muted-bg" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Replace this with your real email or form when ready.</p>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span class="footer-year"></span> VitalBee · Team DİH</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
 </body>
 </html>

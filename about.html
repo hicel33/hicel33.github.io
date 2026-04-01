@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Team DİH — VitalBee." />
+  <title>About us — VitalBee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">VitalBee</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="block">
+      <div class="container">
+        <h1>About us</h1>
+        <p class="intro">
+          We are <strong>Team DİH</strong>, three final-year Computer Engineering students. We have worked together on several projects before, so we split VitalBee clearly: one person leads system architecture and integration, one leads AI and inference, and one leads signal processing. Everyone owns a part of the stack end to end.
+        </p>
+      </div>
+    </section>
+
+    <section class="block muted-bg">
+      <div class="container">
+        <h2 class="sr-only">Team</h2>
+        <ul class="team-list">
+          <li class="person">
+            <img src="images/guney.jpg" alt="Hüseyin Güney İçel" class="person-photo" />
+            <h3>Hüseyin Güney İçel</h3>
+            <p class="role">System architecture &amp; business</p>
+            <p>System design, bringing hardware and software together, and the project roadmap. Background in defence industry and radar-related signal work.</p>
+          </li>
+          <li class="person">
+            <img src="images/duru.png" alt="Duru Yılmaz" class="person-photo" />
+            <h3>Duru Yılmaz</h3>
+            <p class="role">AI &amp; inference</p>
+            <p>Training pipelines, models, and fast onboard inference. Experience from an AI solutions company.</p>
+          </li>
+          <li class="person">
+            <img src="images/umuralp.png" alt="İsmet Umuralp Şen" class="person-photo" />
+            <h3>İsmet Umuralp Şen</h3>
+            <p class="role">Signal processing</p>
+            <p>Turning noisy sensor data into useful detection signals for survivor search.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <p><a href="index.html">← Back to home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span class="footer-year"></span> VitalBee · Team DİH</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -23,8 +23,10 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="about.html">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -32,22 +34,24 @@
   </header>
 
   <main id="main">
-    <section class="block hero">
+    <section class="block hero hero-marked">
       <div class="container">
-        <p class="tag">Team DİH</p>
+        <p class="tag tag-cue"><span class="tag-dot" aria-hidden="true"></span> Team DİH · ITU</p>
         <h1>VitalBee</h1>
         <p class="intro">
           We are building an autonomous drone system to help Search &amp; Rescue teams find survivors faster after earthquakes, building collapses, and similar disasters—using aerial scanning, sensors, and AI to highlight likely locations on a map.
         </p>
-        <p>
-          <a class="btn" href="about.html">About us</a>
+        <p class="btn-row">
+          <a class="btn" href="product.html">Product</a>
+          <a class="btn btn-ghost" href="company.html">Company</a>
+          <a class="btn btn-ghost" href="about.html">Team</a>
         </p>
       </div>
     </section>
 
     <section class="block">
       <div class="container">
-        <h2>Search &amp; rescue in the field</h2>
+        <h2 class="h-with-rule">Search &amp; rescue in the field</h2>
         <p class="hint">
           Concept visualization of autonomous aerial scanning over post-disaster terrain—aligned with VitalBee’s mission of rapid survivor localization.
         </p>
@@ -57,41 +61,29 @@
       </div>
     </section>
 
-    <section class="block muted-bg" id="project">
+    <section class="block muted-bg">
       <div class="container">
-        <article class="desc-block">
-          <h2>Project</h2>
-          <p>
-            <strong>VitalBee</strong> is a research and development initiative focused on <strong>drone-based survivor detection</strong> for Search &amp; Rescue. The goal is to shorten the time from disaster to located victims in environments such as earthquakes, building collapses, and landslides—where every minute matters and manual search is risky or slow to scale.
-          </p>
-          <p>
-            The project combines <strong>autonomous flight</strong>, <strong>signal-based sensing</strong>, and <strong>AI-assisted fusion</strong> so that evidence from the air is turned into a live, geo-referenced picture of where survivors are most likely to be. Work spans payload integration, coverage planning, robust signal processing and machine learning, explainable confidence scoring, map generation, and a field dashboard—plus controlled testing and steps toward safe, regulation-aware deployment.
-          </p>
-        </article>
-        <article class="desc-block">
-          <h2>Product</h2>
-          <p>
-            VitalBee is being shaped as an <strong>integrated aerial sensing platform</strong>: a rugged multi-rotor airframe with modular payloads (for example RF, acoustic, and optional thermal channels), <strong>onboard edge computing</strong> for real-time inference, and <strong>ground software</strong> that crews actually use under pressure.
-          </p>
-          <p>
-            Instead of only streaming raw video or traces, the system is designed to output a <strong>dynamic probability map</strong>, <strong>ranked priority points</strong>, and short <strong>evidence summaries</strong> (such as signal strength and repeatability)—supporting a two-stage workflow from wide-area scan to closer verification. The architecture is modular so new sensors and models can plug in without rebuilding the core mapping and decision stack. Longer term, the offering is envisioned as a <strong>drone kit</strong> together with <strong>software and analytics</strong> tailored to institutional rescue teams.
-          </p>
-        </article>
-        <article class="desc-block">
-          <h2>Company</h2>
-          <p>
-            VitalBee is developed by <strong>Team DİH</strong>—three final-year <strong>Computer Engineering</strong> students at <strong>Istanbul Technical University (ITU)</strong>. The team is organized around the full stack of the product: system architecture and integration, AI and onboard inference, and signal processing for detection in noisy, debris-heavy conditions.
-          </p>
-          <p>
-            We have shipped multiple engineering projects together before, so execution, communication, and milestones are aligned with building a <strong>field-ready prototype</strong> first, then growing toward pilots with municipalities, civil protection, and humanitarian partners. Collaboration with industry and research partners is part of the roadmap for sensors, edge AI, and trustworthy, explainable outputs that rescue teams can rely on when it counts.
-          </p>
-        </article>
+        <h2 class="sr-only">Explore VitalBee</h2>
+        <div class="teaser-grid">
+          <a href="product.html" class="teaser-card">
+            <span class="teaser-kicker">Offering</span>
+            <span class="teaser-title">Product &amp; model</span>
+            <span class="teaser-desc">Platform, pricing, partners, and how we deliver value to SAR teams.</span>
+            <span class="teaser-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="company.html" class="teaser-card">
+            <span class="teaser-kicker">Who we are</span>
+            <span class="teaser-title">Company</span>
+            <span class="teaser-desc">Team DİH at ITU—structure, roadmap, and how we work with partners.</span>
+            <span class="teaser-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="block" id="contact">
       <div class="container">
-        <h2>Contact</h2>
+        <h2 class="h-with-rule">Contact</h2>
         <p>For collaborations, pilots, or general inquiries about VitalBee, reach us at Istanbul Technical University.</p>
         <p><a href="mailto:vitalbee@itu.edu.tr">vitalbee@itu.edu.tr</a></p>
       </div>

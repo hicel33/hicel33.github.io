@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Team DİH — the group behind VitalBee at Istanbul Technical University." />
+  <title>Company — VitalBee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo logo-with-mark" href="index.html">
+        <img src="images/logo.png" alt="VitalBee" class="logo-mark" />
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="company.html" aria-current="page">Company</a></li>
+          <li><a href="about.html">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="block page-intro">
+      <div class="container">
+        <p class="tag tag-cue"><span class="tag-dot" aria-hidden="true"></span> Organization</p>
+        <h1>Company</h1>
+        <p class="intro lead-bar">
+          VitalBee is developed by <strong>Team DİH</strong>—three final-year <strong>Computer Engineering</strong> students at <strong>Istanbul Technical University (ITU)</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="block muted-bg">
+      <div class="container">
+        <article class="panel-cue">
+          <h2>How we are built</h2>
+          <p>
+            The team is organized around the full stack of the product: <strong>system architecture and integration</strong>, <strong>AI and onboard inference</strong>, and <strong>signal processing</strong> for detection in noisy, debris-heavy conditions. Everyone owns a slice of the stack end to end.
+          </p>
+        </article>
+        <article class="panel-cue">
+          <h2>How we work</h2>
+          <p>
+            We have delivered multiple engineering projects together before, so communication, milestones, and technical debt are managed with the same rhythm. The roadmap prioritizes a <strong>field-ready prototype</strong>, then pilots with municipalities, civil protection, and humanitarian partners.
+          </p>
+        </article>
+        <article class="panel-cue">
+          <h2>Partners &amp; trust</h2>
+          <p>
+            Collaboration with industry and research partners is part of the plan for sensors, edge AI, and <strong>explainable</strong> outputs that rescue teams can trust under pressure. Meet the individuals on the <a href="about.html">Team</a> page.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <p><a href="index.html">← Back to home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span class="footer-year"></span> VitalBee · Team DİH</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

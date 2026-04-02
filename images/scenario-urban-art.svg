@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Urban collapse search concept</title>
+  <desc id="d1">Drone over rubble with scan grid</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2330"/><stop offset="100%" stop-color="#111418"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sky)"/>
+  <rect x="80" y="380" width="220" height="180" rx="6" fill="#2a3038" opacity="0.9"/>
+  <rect x="340" y="320" width="280" height="240" rx="6" fill="#252a32" stroke="#e8a317" stroke-opacity="0.35"/>
+  <rect x="660" y="400" width="200" height="160" rx="6" fill="#2a3038" opacity="0.85"/>
+  <rect x="900" y="360" width="180" height="200" rx="6" fill="#252a32" opacity="0.8"/>
+  <g stroke="#3db8e8" stroke-width="1.2" opacity="0.4">
+    <path d="M200 350 V620 M280 350 V620 M360 350 V620 M440 350 V620 M520 350 V620 M600 350 V620 M680 350 V620 M760 350 V620 M840 350 V620 M920 350 V620 M1000 350 V620"/>
+    <path d="M200 400 H1020 M200 460 H1020 M200 520 H1020 M200 580 H1020"/>
+  </g>
+  <rect x="520" y="460" width="100" height="70" fill="rgba(61,184,232,0.2)" stroke="#3db8e8" stroke-width="2.5"/>
+  <g transform="translate(920 120)">
+    <ellipse cx="0" cy="20" rx="42" ry="12" fill="#252a32" stroke="#3db8e8" stroke-width="2"/>
+    <rect x="-8" y="-25" width="16" height="40" rx="3" fill="#2a3038" stroke="#e8a317" stroke-width="1.5"/>
+    <path d="M-35 0 L-8 0 M8 0 L35 0" stroke="#3db8e8" stroke-width="3"/>
+    <circle cx="-35" cy="0" r="8" fill="#181c22" stroke="#3db8e8"/><circle cx="35" cy="0" r="8" fill="#181c22" stroke="#3db8e8"/>
+    <path d="M0 20 L0 200" stroke="#3db8e8" stroke-width="2" opacity="0.5" stroke-dasharray="8 6"/>
+  </g>
+  <text x="48" y="56" fill="#3db8e8" font-family="system-ui,sans-serif" font-size="22" font-weight="700">Urban SAR grid</text>
+  <text x="48" y="88" fill="#9ca3af" font-family="system-ui,sans-serif" font-size="15">Scenario illustration · VitalBee</text>
+</svg>

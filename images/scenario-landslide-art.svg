@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Landslide corridor search concept</title>
+  <desc id="d2">Drone sweeping along debris flow</desc>
+  <rect width="1200" height="675" fill="#111418"/>
+  <path d="M0 520 Q400 200 1200 420 L1200 675 L0 675 Z" fill="#252a32" stroke="#3db8e8" stroke-opacity="0.25"/>
+  <path d="M0 560 Q450 280 1200 480" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.6"/>
+  <path d="M180 380 Q500 340 900 400" fill="none" stroke="#3db8e8" stroke-width="2" opacity="0.45"/>
+  <path d="M220 320 Q520 300 940 360" fill="none" stroke="#3db8e8" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="420" cy="355" r="14" fill="#e8a317"/><circle cx="680" cy="375" r="18" fill="#3db8e8"/><circle cx="880" cy="395" r="14" fill="#e8a317"/>
+  <g transform="translate(200 140)">
+    <ellipse cx="0" cy="18" rx="40" ry="11" fill="#252a32" stroke="#e8a317" stroke-width="1.8"/>
+    <rect x="-7" y="-22" width="14" height="36" rx="2" fill="#2a3038" stroke="#3db8e8"/>
+    <path d="M-32 0 L-7 0 M7 0 L32 0" stroke="#e8a317" stroke-width="2.5"/>
+    <circle cx="-32" cy="0" r="7" fill="#181c22" stroke="#e8a317"/><circle cx="32" cy="0" r="7" fill="#181c22" stroke="#e8a317"/>
+  </g>
+  <text x="48" y="56" fill="#3db8e8" font-family="system-ui,sans-serif" font-size="22" font-weight="700">Landslide corridor</text>
+  <text x="48" y="88" fill="#9ca3af" font-family="system-ui,sans-serif" font-size="15">Sweep along flow axis · VitalBee</text>
+  <text x="48" y="640" fill="#9ca3af" font-family="system-ui,sans-serif" font-size="13">Priority B  &gt; A &gt; C</text>
+</svg>

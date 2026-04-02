@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VitalBee: three real-world scenarios—urban SAR, landslide, industrial—and how we support you." />
+  <title>Demo scenarios — VitalBee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo logo-with-mark" href="index.html">
+        <img src="images/logo.png" alt="VitalBee" class="logo-mark" />
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="company.html">Company</a></li>
+          <li><a href="demo.html" aria-current="page">Demo</a></li>
+          <li><a href="about.html">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="block page-intro demo-intro">
+      <div class="container container-wide">
+        <p class="tag tag-cue"><span class="tag-dot" aria-hidden="true"></span> Scenarios</p>
+        <h1>Three situations we are built for</h1>
+        <p class="intro lead-bar">
+          We are VitalBee. Below are three examples of how our platform supports <strong>you</strong> when time is short and decisions are hard. In each case we focus on the same thing: clear maps, ranked priorities, and evidence you can stand behind with your teams, your agency, and the public.
+        </p>
+        <nav class="scenario-toc" aria-label="Jump to scenarios">
+          <a href="#scenario-1">1 · Urban collapse</a>
+          <a href="#scenario-2">2 · Landslide corridor</a>
+          <a href="#scenario-3">3 · Industrial night / smoke</a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="scenario-stack">
+      <!-- Scenario 1 -->
+      <article class="scenario-article scenario-article--1" id="scenario-1">
+        <div class="scenario-shell">
+          <header class="scenario-header block muted-bg">
+            <div class="container container-wide">
+              <p class="scenario-index">Scenario 1</p>
+              <h2>Urban earthquake — multi-block rubble</h2>
+              <dl class="scenario-meta">
+                <div><dt>You</dt><dd>You lead municipal SAR operations.</dd></div>
+                <div><dt>The scene</dt><dd>A dense city, hours after the main shock, with façades still falling.</dd></div>
+                <div><dt>What you face</dt><dd>Calls from everywhere, and dogs and crews cannot safely sweep the whole area fast enough.</dd></div>
+              </dl>
+            </div>
+          </header>
+          <div class="block scenario-body-wrap">
+            <div class="container container-wide scenario-body">
+              <figure class="scenario-figure">
+                <picture>
+                  <source srcset="images/demo-scenario-1.png" type="image/png" />
+                  <img src="images/scenario-urban-art.svg" alt="VitalBee over urban rubble: cyan scan grid and priority cell." class="scenario-hero-img" width="1200" height="675" />
+                </picture>
+              </figure>
+              <section class="scenario-narrative">
+                <h3 class="h-with-rule">How we support you</h3>
+                <ul class="scenario-steps scenario-pitch-list">
+                  <li>We help you answer “where first?” without guessing across pancaked blocks. Our platform flies an <strong>adaptive grid</strong> over your priority area and fuses RF, acoustic, and thermal on board—even when dust limits what you see on camera.</li>
+                  <li>You get a live <strong>probability map</strong> so cell <em>G7</em> stands out when signatures repeat, not when they are one-off noise from damaged utilities.</li>
+                  <li>You receive clear <strong>evidence lines</strong> (repeatability, relative strength) so you can move dogs and shoring to <em>G7</em> first and explain that choice inside the command post.</li>
+                </ul>
+                <p class="scenario-outcome"><strong>What this means for you:</strong> Less random search, more coverage with the same teams—because you work from a <strong>ranked list</strong>, not from noise.</p>
+              </section>
+              <div class="diagram-wrap">
+                <h3 class="diagram-title">Visual — grid coverage &amp; priority cell</h3>
+                <figure class="diagram-figure">
+                  <svg class="diagram-svg" viewBox="0 0 640 280" role="img" aria-labelledby="svg1-title svg1-desc">
+                    <title id="svg1-title">Top-down search grid over collapsed blocks</title>
+                    <desc id="svg1-desc">Three building footprints as rubble piles, a cyan grid, flight path, and highlighted priority cell G7.</desc>
+                    <rect width="640" height="280" fill="#111418" />
+                    <rect x="40" y="40" width="180" height="100" rx="4" fill="#2a3038" stroke="#3db8e8" stroke-opacity="0.4" />
+                    <rect x="230" y="60" width="200" height="120" rx="4" fill="#252a32" stroke="#e8a317" stroke-opacity="0.5" />
+                    <rect x="450" y="30" width="150" height="90" rx="4" fill="#2a3038" stroke="#3db8e8" stroke-opacity="0.4" />
+                    <g stroke="#3db8e8" stroke-width="1" opacity="0.35">
+                      <line x1="200" y1="40" x2="200" y2="220" /><line x1="260" y1="40" x2="260" y2="220" />
+                      <line x1="320" y1="40" x2="320" y2="220" /><line x1="380" y1="40" x2="380" y2="220" />
+                      <line x1="440" y1="40" x2="440" y2="220" />
+                      <line x1="200" y1="80" x2="500" y2="80" /><line x1="200" y1="120" x2="500" y2="120" />
+                      <line x1="200" y1="160" x2="500" y2="160" /><line x1="200" y1="200" x2="500" y2="200" />
+                    </g>
+                    <rect x="320" y="120" width="60" height="40" fill="rgba(61,184,232,0.25)" stroke="#3db8e8" stroke-width="2" />
+                    <text x="330" y="145" fill="#e6e9ed" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">G7</text>
+                    <path d="M 520 200 L 360 138" stroke="#e8a317" stroke-width="2" fill="none" marker-end="url(#m1-arr)" />
+                    <circle cx="520" cy="200" r="14" fill="#252a32" stroke="#3db8e8" stroke-width="2" />
+                    <text x="512" y="204" fill="#3db8e8" font-family="DM Sans, system-ui, sans-serif" font-size="11">UAV</text>
+                    <defs>
+                      <marker id="m1-arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                        <path d="M0,0 L8,4 L0,8 Z" fill="#e8a317" />
+                      </marker>
+                    </defs>
+                    <text x="40" y="255" fill="#9ca3af" font-family="DM Sans, system-ui, sans-serif" font-size="11">Rubble · grid · approach · ranked cell</text>
+                  </svg>
+                </figure>
+              </div>
+              <details class="presenter-notes">
+                <summary>In short</summary>
+                <p>Unlike video-only flights, we give you <strong>one ranked map</strong> you can cite when agencies or the press ask why you prioritized one pile first.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Scenario 2 -->
+      <article class="scenario-article scenario-article--2" id="scenario-2">
+        <div class="scenario-shell">
+          <header class="scenario-header block muted-bg">
+            <div class="container container-wide">
+              <p class="scenario-index">Scenario 2</p>
+              <h2>Landslide — long debris corridor, no road</h2>
+              <dl class="scenario-meta">
+                <div><dt>You</dt><dd>You lead a provincial disaster task force in a mountain district.</dd></div>
+                <div><dt>The scene</dt><dd>Kilometres of debris tongue, the access road gone, weather closing in.</dd></div>
+                <div><dt>What you face</dt><dd>Foot teams need hours to reach the toe; helicopters cannot hover low safely along the whole path.</dd></div>
+              </dl>
+            </div>
+          </header>
+          <div class="block scenario-body-wrap">
+            <div class="container container-wide scenario-body">
+              <figure class="scenario-figure">
+                <picture>
+                  <source srcset="images/demo-scenario-2.png" type="image/png" />
+                  <img src="images/scenario-landslide-art.svg" alt="VitalBee sweeping a landslide corridor with ranked waypoints." class="scenario-hero-img" width="1200" height="675" />
+                </picture>
+              </figure>
+              <section class="scenario-narrative">
+                <h3 class="h-with-rule">How we support you</h3>
+                <ul class="scenario-steps scenario-pitch-list">
+                  <li>We close the coverage gap with a long <strong>corridor pattern</strong> along the debris flow. Acoustic and RF contacts are tied to GPS in minutes, without your people laying ground sensors along kilometres by hand.</li>
+                  <li>You see ranked chains along the flow—not random dots—so <em>Waypoint B</em> comes first when the data show a stable pattern where vehicles may have moved.</li>
+                  <li>You can brief rope teams and aviation with <strong>B before A and C</strong>, using our confidence order instead of gut feel down the valley.</li>
+                </ul>
+                <p class="scenario-outcome"><strong>What this means for you:</strong> Fast coverage of the whole slide and a <strong>clear order of effort</strong> when every hour counts.</p>
+              </section>
+              <div class="diagram-wrap">
+                <h3 class="diagram-title">Visual — debris tongue &amp; ranked waypoints</h3>
+                <figure class="diagram-figure">
+                  <svg class="diagram-svg" viewBox="0 0 640 300" role="img" aria-labelledby="svg2-title svg2-desc">
+                    <title id="svg2-title">Cross-section of landslide with drone sweep and waypoints</title>
+                    <desc id="svg2-desc">Slope profile, debris flow, three waypoints A B C by priority, and UAV sweep arcs.</desc>
+                    <rect width="640" height="300" fill="#181c22" />
+                    <path d="M 0 220 Q 200 100 640 180 L 640 300 L 0 300 Z" fill="#2a3038" stroke="#3db8e8" stroke-opacity="0.3" />
+                    <path d="M 0 240 Q 220 140 640 200" fill="none" stroke="#9ca3af" stroke-width="1" stroke-dasharray="6 4" />
+                    <text x="20" y="270" fill="#9ca3af" font-size="11" font-family="DM Sans, system-ui, sans-serif">Valley floor</text>
+                    <circle cx="380" cy="168" r="36" stroke="#3db8e8" stroke-width="1.5" fill="none" opacity="0.5" />
+                    <circle cx="320" cy="150" r="48" stroke="#3db8e8" stroke-width="1" fill="none" opacity="0.35" />
+                    <path d="M 480 80 L 400 130" stroke="#e8a317" stroke-width="2" fill="none" marker-end="url(#m2-arr)" />
+                    <rect x="470" y="55" width="36" height="22" rx="3" fill="#252a32" stroke="#3db8e8" />
+                    <text x="475" y="71" fill="#3db8e8" font-size="9" font-family="DM Sans, system-ui, sans-serif">UAV</text>
+                    <circle cx="280" cy="185" r="8" fill="#e8a317" /><text x="268" y="210" fill="#e6e9ed" font-size="12" font-weight="600" font-family="DM Sans, system-ui, sans-serif">A</text>
+                    <circle cx="360" cy="165" r="10" fill="#3db8e8" /><text x="350" y="145" fill="#e6e9ed" font-size="13" font-weight="700" font-family="DM Sans, system-ui, sans-serif">B ★</text>
+                    <circle cx="440" cy="175" r="8" fill="#e8a317" /><text x="432" y="200" fill="#e6e9ed" font-size="12" font-weight="600" font-family="DM Sans, system-ui, sans-serif">C</text>
+                    <defs>
+                      <marker id="m2-arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                        <path d="M0,0 L8,4 L0,8 Z" fill="#e8a317" />
+                      </marker>
+                    </defs>
+                    <text x="20" y="30" fill="#9ca3af" font-size="11" font-family="DM Sans, system-ui, sans-serif">Priority: B &gt; A &gt; C · sweep along flow</text>
+                  </svg>
+                </figure>
+              </div>
+              <details class="presenter-notes">
+                <summary>In short</summary>
+                <p>We give you mobility that ground-only tools cannot match along a long corridor. If visibility drops, our signal layers still tell the story—<strong>coverage and ranking</strong>, not only video.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Scenario 3 -->
+      <article class="scenario-article scenario-article--3" id="scenario-3">
+        <div class="scenario-shell">
+          <header class="scenario-header block muted-bg">
+            <div class="container container-wide">
+              <p class="scenario-index">Scenario 3</p>
+              <h2>Industrial incident — night, smoke, bad visibility</h2>
+              <dl class="scenario-meta">
+                <div><dt>You</dt><dd>You coordinate plant safety and mutual-aid SAR.</dd></div>
+                <div><dt>The scene</dt><dd>Partial building collapse, smoke and steam, hotspots shifting.</dd></div>
+                <div><dt>What you face</dt><dd>Thermal blobs may be people—or pipes and tanks. CCTV is down.</dd></div>
+              </dl>
+            </div>
+          </header>
+          <div class="block scenario-body-wrap">
+            <div class="container container-wide scenario-body">
+              <figure class="scenario-figure">
+                <picture>
+                  <source srcset="images/demo-scenario-3.png" type="image/png" />
+                  <img src="images/scenario-industrial-art.svg" alt="VitalBee at night over industrial smoke: sensor fusion to teams." class="scenario-hero-img" width="1200" height="675" />
+                </picture>
+              </figure>
+              <section class="scenario-narrative">
+                <h3 class="h-with-rule">How we support you</h3>
+                <ul class="scenario-steps scenario-pitch-list">
+                  <li>We address unclear thermal with <strong>signal-first fusion</strong>: acoustic and narrowband RF cues from phones or wearables, with thermal held lower until the plume clears.</li>
+                  <li>We run a verification pass that loiters, checks consistency over time, and highlights <em>Bay North-3</em> with <strong>evidence your command staff can read</strong> under stress.</li>
+                  <li>Your entry teams receive a <strong>geo pin and confidence band</strong> on rugged tablets so crews can commit to the north side first instead of spreading effort across noise.</li>
+                </ul>
+                <p class="scenario-outcome"><strong>What this means for you:</strong> Decisions you can defend when <strong>one wrong door</strong> costs lives—not only a dot on a map.</p>
+              </section>
+              <div class="diagram-wrap">
+                <h3 class="diagram-title">Visual — sensors → VitalBee → teams</h3>
+                <figure class="diagram-figure">
+                  <svg class="diagram-svg" viewBox="0 0 640 240" role="img" aria-labelledby="svg3-title svg3-desc">
+                    <title id="svg3-title">Block flow from environment to response team</title>
+                    <desc id="svg3-desc">Smoke-limited scene feeds RF, acoustic, and thermal into VitalBee fusion, then dashboard, then entry team.</desc>
+                    <rect width="640" height="240" fill="#111418" />
+                    <rect x="20" y="60" width="100" height="120" rx="6" fill="#252a32" stroke="#9ca3af" />
+                    <text x="45" y="100" fill="#e6e9ed" font-size="11" font-family="DM Sans, system-ui, sans-serif">Scene</text>
+                    <text x="32" y="120" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">smoke / night</text>
+                    <path d="M 125 120 L 155 120" stroke="#e8a317" stroke-width="2" marker-end="url(#m3-arr)" />
+                    <rect x="160" y="50" width="130" height="140" rx="6" fill="#181c22" stroke="#3db8e8" />
+                    <text x="175" y="78" fill="#3db8e8" font-size="10" font-weight="600" font-family="DM Sans, system-ui, sans-serif">Sensors</text>
+                    <text x="170" y="98" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">· RF</text>
+                    <text x="170" y="115" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">· Acoustic</text>
+                    <text x="170" y="132" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">· Thermal ▾</text>
+                    <path d="M 295 120 L 325 120" stroke="#e8a317" stroke-width="2" marker-end="url(#m3-arr)" />
+                    <rect x="330" y="55" width="120" height="130" rx="6" fill="#252a32" stroke="#e8a317" />
+                    <text x="345" y="85" fill="#e8a317" font-size="10" font-weight="600" font-family="DM Sans, system-ui, sans-serif">VitalBee</text>
+                    <text x="340" y="105" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">Fusion + score</text>
+                    <text x="340" y="125" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">Map + evidence</text>
+                    <path d="M 455 120 L 485 120" stroke="#e8a317" stroke-width="2" marker-end="url(#m3-arr)" />
+                    <rect x="490" y="65" width="130" height="110" rx="6" fill="#181c22" stroke="#3db8e8" />
+                    <text x="520" y="95" fill="#e6e9ed" font-size="10" font-weight="600" font-family="DM Sans, system-ui, sans-serif">Teams</text>
+                    <text x="505" y="115" fill="#9ca3af" font-size="9" font-family="DM Sans, system-ui, sans-serif">Entry + command</text>
+                    <defs>
+                      <marker id="m3-arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                        <path d="M0,0 L8,4 L0,8 Z" fill="#e8a317" />
+                      </marker>
+                    </defs>
+                  </svg>
+                </figure>
+              </div>
+              <details class="presenter-notes">
+                <summary>In short</summary>
+                <p>In a plant emergency you need more than a black box. We put <strong>evidence next to the pin</strong> so you and mutual-aid command can agree fast.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="block muted-bg">
+      <div class="container container-wide">
+        <h2 class="h-with-rule">Using this page</h2>
+        <ul class="cue-list">
+          <li><span class="cue-bullet" aria-hidden="true"></span> Use the links at the top to move between scenarios, or full-screen your browser (F11) when you present.</li>
+          <li><span class="cue-bullet" aria-hidden="true"></span> Open <strong>In short</strong> when you want a one-paragraph recap of that scenario.</li>
+          <li><span class="cue-bullet" aria-hidden="true"></span> The roles and place names here are examples—your own organization and geography stay at the centre.</li>
+        </ul>
+        <p class="back-link"><a href="index.html">← Back to home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span class="footer-year"></span> VitalBee · Team DİH</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
